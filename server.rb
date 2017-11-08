@@ -1,8 +1,12 @@
 require 'sinatra'
+# get '/' do
+#   "Hello Wyncode"
+# end
+
 get '/' do
-  "Hello Wyncode"
+  File.read(File.join('public', 'hello.txt'))
 end
 
-get '/wyncode' do
-  "Hello World"
-end
+# get '/' do
+#   File.read(File.join('public', 'index.html'))
+# end
